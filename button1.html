@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" size="16x16 32x32 64x64" href="img/letter.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>제1층: 인사</title>
+  </head>
+  <body onload="showClock()">
+    <header class="nav-bar">
+      <button type="button" onclick="location.href= 'button1.html'">
+        인사
+      </button>
+      <button type="button" onclick="location.href= 'button2.html'">
+        커피
+      </button>
+      <button type="button" onclick="location.href= 'button3.html'">
+        사랑
+      </button>
+    </header>
+    <div class="clock">
+      <div id="divClock"></div>
+      <img src="img/window.png" />
+      <p id="leftClock">✱❇︎✱ 이 박스는 10초 뒤 사라집니다 ✱❇︎✱</p>
+      <span
+        >If you want.. 오른쪽 모서리를 클릭해 박스 크기를 조절할 수
+        있습니다.</span
+      >
+      <progress value="0" max="10" id="progressBar"></progress>
+    </div>
+
+    <main class="main">
+      <div class="main-letter__text">
+        <p class="main-letter__text--main">
+          안녕하세요? 주인장 박수빈입니다.<br />
+          <span>Suebin's Coffee Shop</span>에 오신 것을 환영합니다.<br />
+          이곳은 2022년 2월 13일부로 스물두 살이 된 주인장이 자신의 생일을
+          기념해 오픈한 Coffee Shop입니다.<br />
+          끝도 없이 미루고만 싶었던 스물두 살 생일에 많은 사랑을 보내주셔서
+          감사합니다. 저는 덕분에 사랑의 부활을 꿈꿨습니다. 주인장이 생일 종료
+          직전에 페이지를 만들기 시작해 부족한 점이 많습니다. 그래도
+          재미있었으면 좋겠습니다. 반응이 괜찮다면 차차 발전시켜 나가보도록
+          하겠습니다.
+        </p>
+      </div>
+      <div class="main-menu">
+        <p>GROUND FLOOR</p>
+        <div class="main-menu__box">
+          <div class="main-menu__option">
+            <label for="coffee-choice"
+              >☕️ 원하시는 음료를 말씀해주세요.<br />
+              <span
+                >- 다시 입력하시려면 backspace / delete 키를 사용하세요.</span
+              >
+            </label>
+            <input type="text" list="coffee-options" id="coffee-choice" />
+            <datalist id="coffee-options">
+              <option value="우리 첫만남 때 기억나?" label="hot/ice" />
+              <option value="우리 첫만남 때 그랬지." label="hot/ice" />
+              <option value="용기 있는 자의 사랑" label="hot/ice" />
+              <option value="용기 없는 자의 신중함" label="hot/ice" />
+              <option value="당신 눈빛은 태양 같아요" label="only hot" />
+              <option value="다른 세계의 눈" label="only ice" />
+            </datalist>
+          </div>
+          <div class="main-menu__mine">
+            <button
+              type="button"
+              onclick="AddMenu(document.getElementById('coffee-choice'), document.getElementById('coffee-options'));"
+            >
+              주문
+            </button>
+            <select id="Menu" size="3" multiple></select>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="under-bar" onclick="location.href= 'index.html'">
+      <button type="button">🏠 집에 가고 싶다면 여기를 눌러주세요 . . .</button>
+    </footer>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e9f12eb269.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
