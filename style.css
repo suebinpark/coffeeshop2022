@@ -191,7 +191,7 @@ progress {
 
 .main {
   display: flex;
-  height: 100vh;
+  height: 150vh;
   flex-direction: column;
   justify-content: center;
   padding: 10px 20px;
@@ -203,7 +203,7 @@ progress {
   margin-bottom: 10px;
 }
 .main-letter__text--main span {
-  font-size: 25px;
+  font-size: 15px;
   font-family: "Leckerli One", cursive;
   font-style: italic;
   margin-right: 5px;
