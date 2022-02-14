@@ -191,7 +191,7 @@ progress {
 
 .main {
   display: flex;
-  height: 150vh;
+  height: 130vh;
   flex-direction: column;
   justify-content: center;
   padding: 10px 20px;
