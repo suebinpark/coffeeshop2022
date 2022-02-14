@@ -193,7 +193,8 @@ progress {
   display: flex;
   height: 130vh;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-top: 100px;
   padding: 10px 20px;
 }
 .main-letter__text {
